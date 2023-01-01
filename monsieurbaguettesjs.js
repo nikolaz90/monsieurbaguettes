@@ -17,7 +17,7 @@ function scrollFunction(){
 const modal = document.getElementById("gallery"); 
 const modalContent = document.getElementById("large_image");
 const section3 = document.getElementById("section-3");
-const photos = ["./DSC01445.JPG", "./DSC02081.JPG", "./DSC01484.JPG", "./DSC01888.JPG", "./DSC01311.JPG", "./DSC01987.JPG", "./DSC01960.JPG", "./DSC01572.JPG", "./DSC02333.JPG", "./DSC01587.JPG", "./DSC01251.JPG", "./DSC02231.JPG" ];
+const photos = ["./images/DSC01445.JPG", "./images/DSC02081.JPG", "./images/DSC01484.JPG", "./images/DSC01888.JPG", "./images/DSC01311.JPG", "./images/DSC01987.JPG", "./images/DSC01960.JPG", "./images/DSC01572.JPG", "./images/DSC02333.JPG", "./images/DSC01587.JPG", "./images/DSC01251.JPG", "./images/DSC02231.JPG" ];
 
 function enlargenFunction(imageNumber){
   section3.style.display = "none";
