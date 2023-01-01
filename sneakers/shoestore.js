@@ -17,7 +17,7 @@ function hamburgerFunction() {
     count++;
     document.getElementById("quantityforcart").value = count;
   }
-  const images = ["./image-product-1.jpg", "./image-product-2.jpg", "./image-product-3.jpg", "./image-product-4.jpg"];
+  const images = ["./images/image-product-1.jpg", "./images/image-product-2.jpg", "./images/image-product-3.jpg", "./images/image-product-4.jpg"];
   let largeImg = document.getElementById("largethumbnailimg");
   function changeImage(imageNumber){
     largeImg.src = images[imageNumber];
