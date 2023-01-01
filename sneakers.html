@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./shoestore.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div class="mob-nav" id="mobnav">
+          <ul class="mob-menu-list container-column">
+              <li class="mob-link" id="mobcollections">Collections</li>
+              <li class="mob-link" id="mobmen">Men</li>
+              <li class="mob-link" id="mobwomen">Women</li>
+              <li class="mob-link" id="mobabout">About</li>
+              <li class="mob-link" id="mobcontact">Contact</li>
+          </ul>
+  </div>
+    <header class="nav-section container">
+      
+      <div class="nav-container container">
+        
+        <div class="nav-brand-name container" id="navbrandname">
+          <div class="hamburger-div" id="hamburgerdiv">
+            <input type="checkbox" id="hamburger" onclick="hamburgerFunction()">
+            <label id="hamburger-icon" for="hamburger">
+              <span id="hamburgericon"> </span>
+              <span id="hamburgericon"> </span>
+              <span id="hamburgericon"> </span>
+            </label>
+            
+          </div>
+          <h1 class="brand-name">sneakers</h1>
+        </div>
+        <ul class="nav-menu container" id="navmenu">
+          <li class="menu-link" id="collections">Collections</li>
+          <li class="menu-link" id="men">Men</li>
+          <li class="menu-link" id="women">Women</li>
+          <li class="menu-link" id="about">About</li>
+          <li class="menu-link" id="contact">Contact</li>
+        </ul>
+
+        <div class="profile-section container" id="profilesection">
+          <img class="nav-cart-icon" id="carticon" src="./icon-cart.svg" alt="shopping cart" onclick="cartAppear()">
+          <div class="cart-number" id="cartnumber"></div>
+          <img class="profile-sprite" src="./image-avatar.png" alt="profile photo">
+        </div>
+        <div class="open-cart" id="cart">
+          <p class="cart-title">Cart</p>
+          <div class="empty-cart paragraph" id="emptycart">Your cart is empty.</div>
+          <div class="full-cart container" id="fullcart"> <img class="cart-img" src="./image-product-1-thumbnail.jpg" alt=""><p class="paragraph" id="cartdetail">Fall limited edition sneakers $125 x </p></div>
+          <button class="btn">Checkout</button>
+        </div>
+        
+        
+      </div>
+    </header>   
+
+      <div class="section">
+        <div class="section-container container">
+          <div class="gallery-container container-column">
+            <div class="large-thumbnail">
+              <img class="large-thumbnail-img" id="largethumbnailimg" src="./image-product-1.jpg">
+              <a class="prev" onclick="nextImg(-1)">&#10094;</a>
+              <a class="next" onclick="nextImg(1)">&#10095;</a>
+            </div>
+            <div class="small-thumbnails container">
+              <img src="./image-product-1-thumbnail.jpg" class="small-thumbnail-img" id="smallthumbnailimg1" onclick="changeImage(0)" >
+              <img src="./image-product-2-thumbnail.jpg" class="small-thumbnail-img" id="smallthumbnailimg2" onclick="changeImage(1)" >
+              <img src="./image-product-3-thumbnail.jpg" class="small-thumbnail-img" id="smallthumbnailimg3" onclick="changeImage(2)" >
+              <img src="./image-product-4-thumbnail.jpg" class="small-thumbnail-img" id="smallthumbnailimg4" onclick="changeImage(3)">
+            </div>
+          </div>
+
+          <div class="description-container container-column">
+            <div class="description-paragraph">
+              <p class="sneaker-company-title">Sneaker Company</p>
+              <h2>Fall Limited Edition Sneakers</h2>
+              <p class="paragraph">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+              <div>$125.00 <p class="discount">50%</p></div>  
+              <p class="old-price"><s>$250.00</s></p> 
+            </div>
+            <div class="add-to-cart-container">
+              <div class="more-or-less container" id="moreorless">
+                <div class="decrement increment-decrement" id="decrementbutton" onclick="decrementFunction()">-</div>
+                <input class="quantity-for-cart" type="text" value="1" name="quantity" id="quantityforcart">
+                <div class="increment increment-decrement" id="incrementbutton" onclick="incrementFunction()">+</div>
+              </div>
+              <button class="btn" onclick="addRemoveCart()">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+          
+      </div>  
+  
+    <footer>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://monsieurbaguettes.com/">Monsieur Baguettes</a>. 
+    </div>
+    </footer>
+<script src="./shoestore.js"></script>
+</body>
+</html>
